@@ -1,6 +1,8 @@
-const navbarToggle = document.querySelector('.navbar-toggle-button');
-const navbarCollapse = document.querySelector('.navbar-collapse');
+const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const nav_header = document.querySelector(".navbar");
 
-navbarToggle.addEventListener('click', () => {
-  navbarCollapse.classList.toggle('show');
-});
+const toggleNavbar = () => {
+  nav_header.classList.toggle("active");
+};
+
+mobile_nav.addEventListener("click", () => toggleNavbar());

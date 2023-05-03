@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sohan Real Estate</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sohan Real Estate</title>
+
+  <!-- css link============================ -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- css font awesome===================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-brand">
-          <a href="#">Logo</a>
+  <div class="relative">
+  <header>
+    <div class="wrapper">
+      <div class="navbar">
+        <div class="navbar-brand" >
+          <a href="#" target="_blank" title="logo">
+            <img src="https://placehold.co/100x20" alt="Sohan Real Estate Logo">
+          </a>
         </div>
-        <div class="navbar-toggle">
-          <button type="button" class="navbar-toggle-button">
-            <span class="navbar-toggle-icon"></span>
-            <span class="navbar-toggle-icon"></span>
-            <span class="navbar-toggle-icon"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a href="#">Home</a></li>
-            <li class="nav-item"><a href="#">About</a></li>
-            <li class="nav-item"><a href="#">Services</a></li>
-            <li class="nav-item"><a href="#">Contact</a></li>
+        <nav class="navbar-collapse">
+          <ul class="navbar-icon">
+            <li class="nav-item"><a href="#" target="_blank" title="mail" id="mailId">mail</a></li>
+            <li class="nav-item"><a href="#" target="_blank" title="whatsapp" id="whatsapp">whatsapp</a></li>
           </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" target="_blank" title="home">Home</a></li>
+            <li class="nav-item"><a href="#" target="_blank" title="about">About</a></li>
+            <li class="nav-item"><a href="#" target="_blank" title="Services">Services</a></li>
+            <li class="nav-item"><a href="#" target="_blank" title="contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-navbar-btn">
+          <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
         </div>
-      </nav>
+      </div>
+    </div>
+  </header> 
+  <div class="heroContainer">
+    <div class="heroInfo">
+      <h1 class="heroText">Find Your Property</h1>
+      <div class="btnContainer">
+        <button class="btn">Residential properties</button>
+        <button class="btn">Commercial properties</button>
+        <button class="btn">Rent properties</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- javascript here=================== -->
+  <script src="index.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
