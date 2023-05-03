@@ -242,6 +242,7 @@ a,
 
 #card-container {
   max-width: 1350px;
+  height: 25%;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
@@ -250,7 +251,6 @@ a,
 .card {
     border: 1px solid #c82020;
     border-radius: 5px;
-    padding: 10px;
     margin-bottom: 10px;
   }
 
@@ -260,8 +260,13 @@ a,
 
   }
   .cropped {
-    width: 400px;
+width: 100%;
     height: 100%;
     object-fit: cover;
   
+  }
+  .card-image{
+    height: 60%;
+    width: 100%;
+
   }
