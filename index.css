@@ -13,14 +13,18 @@
 
 /* header start here================================== */
 header {
-  background-color: #000;
+  background-color: transparent;
   padding: 20px 0;
-  position: sticky;
+ 
   top: 0;
+  z-index: 3;
+  /* display: un; */
+
 }
 .relative{
   position: relative;
-}
+
+  background: url('assets/bg2.jpg') no-repeat fixed center/cover;}
 a,
 .navbar,
 .navbar-icon,
@@ -89,7 +93,7 @@ a,
 .nav-item a,
 .mobile-nav-icon {
   text-decoration: none;
-  color: #aaa;
+  color: #ffffff;
 }
 
 .mobile-nav-icon {
@@ -187,17 +191,15 @@ a,
 
 /* Hero section */
 .heroContainer {
-  background: url('assets/bg2.jpg') no-repeat fixed center/cover;
+
   width: 100%;
   height: 80vh;
 }
 .heroContainer::after{
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
   width: 100%;
+  height: 80vh;
   background: rgba(0, 0, 0, 0.5);
 }
 .heroInfo {
@@ -236,3 +238,30 @@ a,
   background-color: #1D3E53;
   border: 1px solid #1D3E53;
 }
+/* List View */
+
+#card-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+} 
+.card {
+    border: 1px solid #c82020;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card-image{
+    width: 300px;
+    height: auto;
+
+  }
+  .cropped {
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+  
+  }
