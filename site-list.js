@@ -34,9 +34,13 @@ function createCardView(cardData) {
       <img class="cropped" src=${cardData.image} alt="Computer Man">
       </div>
       <div class="propertydetails">
-        <h4>${cardData.title}</h4>
-        <p>${cardData.description}</p>
-        <p>${cardData.price}</p>
+      <div>
+        <h4 class="propertTitle">${cardData.title}</h4>
+        <p class="propertyLocation">${cardData.location}</p>
+        <span class="propertyType">${cardData.site_type}</span>
+        <span class="propertyArea">${cardData.area}</span>
+      </div>
+      <div class="propertyPrice">${cardData.price}</div>
       </div>
       </div>
     `;
