@@ -119,6 +119,7 @@ a,
   .navbar-collapse {
     width: 60%;
   }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -190,6 +191,20 @@ a,
   .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
     display: none;
   }
+
+  #filter-div,
+  .selectiondiv{
+    display: block !important;
+    text-align: center !important;
+  }
+  #enquiry_for_selection,
+  #properties_type_selection,
+  #area_size_selection,
+  #location_selection,
+  #budget_selection{
+    width: 70%;
+    margin:0 50px;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -201,6 +216,14 @@ a,
 @media screen and (max-width: 320px) {
   .navbar-collapse {
     padding: 0 80px 0 0;
+  }
+  #enquiry_for_selection,
+  #properties_type_selection,
+  #area_size_selection,
+  #location_selection,
+  #budget_selection{
+    width: 100%;
+    margin:0 5px;
   }
 }
 
@@ -259,9 +282,6 @@ a,
 
 /* List View */
 
-#filter-div{
-  height: 20vh;
-}
 
 
 
@@ -331,6 +351,9 @@ a,
 }
 .propertydetails{
   padding: 10px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
 }
 
 
@@ -339,7 +362,23 @@ a,
   align-items: center;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
 
+#submit{
+  padding: 10px 40px; 
+  background-color: #0072b9;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: #fff;
+  margin: 10px;
+}
+#submit::before{
+  content: "\f002";
+  font-family: "fontAwesome";
+  text-indent: 0;
+  padding-right: 10px;
 }
 .selectiondiv{
 margin: 10px;
@@ -357,4 +396,47 @@ display: flex;
   padding:  10px 0 10px  0;
   /* border-color: #253f4e; */
   border: 1px solid #464452;
+}
+
+.propertTitle,
+.propertyLocation,
+.propertyType,
+.propertyArea,
+.propertyPrice{
+  color: #555;
+}
+
+.propertyLocation::before,
+.propertyType::before,
+.propertyArea::before{
+  padding-right: 5px;
+  font-family: "fontAwesome";
+  text-indent: 0;
+}
+.propertyLocation{
+  padding: 5px 0;
+}
+.propertyLocation::before{
+  content: "\f041";
+  color: #ff0000;
+}
+/* .propertyType{
+  text-indent: -999px;
+  display: inline-flex;
+} */
+.propertyType::before{
+  content: "\f236";
+}
+.propertyArea::before{
+  content: "\f546";
+  padding-left: 10px;
+}
+.propertyType::before,
+.propertyArea::before{
+  color: #aaa;
+  font-size: 13px;
+}
+.propertyPrice{
+  font-size: 30px;
+  color: rgb(0, 208, 139);
 }
