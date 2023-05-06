@@ -1,189 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sohan Real Estate</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sohan Real Estate</title>
+    <!-- css link============================ -->
+    <link rel="stylesheet" href="index.css" />
 
-  <!-- css link============================ -->
-  <link rel="stylesheet" href="index.css">
+    <!-- css font awesome===================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
 
-  <!-- css font awesome===================== -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-
-<body>
-  <div class="relative">
-    <header>
-      <div class="wrapper">
-        <div class="navbar">
-          <div class="navbar-brand">
-            <a href="#" target="_blank" title="logo">
-              <img src="https://placehold.co/100x20" alt="Sohan Real Estate Logo">
-            </a>
+  <body>
+    <div class="relative">
+      <header>
+        <div class="wrapper">
+          <div class="navbar">
+            <div class="navbar-brand">
+              <a href="#" target="_blank" title="logo">
+                <img
+                  src="https://placehold.co/100x20"
+                  alt="Sohan Real Estate Logo"
+                />
+              </a>
+            </div>
+            <nav class="navbar-collapse">
+              <ul class="navbar-icon">
+                <li class="nav-item">
+                  <a
+                    href="mailto:yashpalkar4@gmail.com"
+                    target="_blank"
+                    title="mail"
+                    id="mailId"
+                    >mail</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="https://wa.me/7977496008"
+                    target="_blank"
+                    title="whatsapp"
+                    id="whatsapp"
+                    >whatsapp</a
+                  >
+                </li>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" target="_blank" title="home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" target="_blank" title="about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" target="_blank" title="Services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" target="_blank" title="contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="mobile-navbar-btn">
+              <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+              <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+            </div>
           </div>
-          <nav class="navbar-collapse">
-            <ul class="navbar-icon">
-              <li class="nav-item"><a href="mailto:yashpalkar4@gmail.com" target="_blank" title="mail"
-                  id="mailId">mail</a></li>
-              <li class="nav-item"><a href="https://wa.me/7977496008" target="_blank" title="whatsapp"
-                  id="whatsapp">whatsapp</a></li>
-            </ul>
-            <ul class="navbar-nav">
-              <li class="nav-item"><a href="#" target="_blank" title="home">Home</a></li>
-              <li class="nav-item"><a href="#" target="_blank" title="about">About</a></li>
-              <li class="nav-item"><a href="#" target="_blank" title="Services">Services</a></li>
-              <li class="nav-item"><a href="#" target="_blank" title="contact">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="mobile-navbar-btn">
-            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
-            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+      </header>
+      <div class="heroContainer">
+        <div class="heroInfo">
+          <h1 class="heroText">Find Your Property</h1>
+          <div class="btnContainer">
+            <button class="btn">Residential properties</button>
+            <button class="btn">Commercial properties</button>
+            <button class="btn">Rent properties</button>
           </div>
         </div>
       </div>
-    </header>
-    <div class="heroContainer">
-      <div class="heroInfo">
-        <h1 class="heroText">Find Your Property</h1>
-        <div class="btnContainer">
-          <button class="btn">Residential properties</button>
-          <button class="btn">Commercial properties</button>
-          <button class="btn">Rent properties</button>
-        </div>
-      </div>
     </div>
-  </div>
-  <div id="site">
-    <div id="filter-div">
-
-      <div class="selectiondiv">
-        <label for="propertyfordropdown">Property For:</label>
-        <select id="enquiry_for_selection">
-        </select>
-      </div>
-
-      <div class="selectiondiv">
-        <label for="propertyTypedropdown">Property Type:</label>
-        <select id="properties_type_selection">
-        </select>
-      </div>
-
-      <div class="selectiondiv">
-        <label for="areadropdown">Area:</label>
-        <select id="area_size_selection">
-        </select>
-      </div>
-
-      <div class="selectiondiv">
-        <label for="locationdropdown">Location:</label>
-        <select id="location_selection">
-        </select>
-      </div>
-      <div class="selectiondiv">
-        <label for="budgetdropdown">Budget</label>
-        <select id="budget_selection">
-        </select>
-      </div>
-
-
-      <button onclick="handleButtonClick()" text="Search" type="submit" id="submit">SEARCH</button>
-    </div>
-    <div id="card-container"></div>
-  </div>
-
-  <section>
-    <div class="whywe-form">
-      <div class="inquiry-form">
-        <h4>Sohan Realty Inquiry Form</h4>
-        <div class="form">
-          <label  id="inquiry-label"for="inquiry-type">Inquiry Type:</label>
-          <div class="inquiry-type-div">
-        
-          <select id="inquiry-type" class="selector" name="inquiry-type">
-            <option value="general">Apartment</option>
-            <option value="property">Office</option>
-            <option value="property">House</option>
-            <option value="property">Studio</option>
-            <option value="other">Other</option>
-          </select>
+    <div id="site">
+      <div id="filter-div">
+        <div class="selectiondiv">
+          <label for="propertyfordropdown">Property For:</label>
+          <select id="enquiry_for_selection"></select>
         </div>
-        
-        <div>
-          <label for="personal-info">Personal Info:</label>
-          <select id="personal-info"  class="selector" name="personal-info">
-            <option value="buyer">Buyer</option>
-            <option value="seller">Seller</option>
-          </select>
-        
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" required>
+
+        <div class="selectiondiv">
+          <label for="propertyTypedropdown">Property Type:</label>
+          <select id="properties_type_selection"></select>
+        </div>
+
+        <div class="selectiondiv">
+          <label for="areadropdown">Area:</label>
+          <select id="area_size_selection"></select>
+        </div>
+
+        <div class="selectiondiv">
+          <label for="locationdropdown">Location:</label>
+          <select id="location_selection"></select>
+        </div>
+        <div class="selectiondiv">
+          <label for="budgetdropdown">Budget</label>
+          <select id="budget_selection"></select>
+        </div>
+
+        <button
+          onclick="handleButtonClick()"
+          text="Search"
+          type="submit"
+          id="submit"
+        >
+          SEARCH
+        </button>
+      </div>
+      <div id="card-container"></div>
+    </div>
+
+    <section>
+      <div class="whywe-form">
+        <div class="inquiry-form">
+          <h4>Sohan Realty Inquiry Form</h4>
+          <div class="form">
+            <div class="inquiry-type-div input-container">
+              <label id="inquiry-label" for="inquiry-type">Inquiry Type</label>
+              <select id="inquiry-type" class="selector" name="inquiry-type">
+                <option value="general">Apartment</option>
+                <option value="property">Office</option>
+                <option value="property">House</option>
+                <option value="property">Studio</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="input-container">
+              <label for="personal-info">Personal Info</label>
+              <div class="side-by-side-field">
+                <select
+                  id="personal-info"
+                  class="selector"
+                  name="personal-info"
+                >
+                  <option value="buyer">Buyer</option>
+                  <option value="seller">Seller</option>
+                </select>
+                <input type="text" id="name" name="name" required placeholder="Your Name" />
+              </div>
+            </div>
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email"  required />
+            </div>
+            <div class="side-by-side-field number-fields">
+              <!-- <label for="max-price">Max Price:</label> -->
+              <input
+                type="number"
+                id="max-price"
+                name="max-price"
+                min="0"
+                placeholder="Max price"
+              />
+
+              <!-- <label for="min-size">Minimum Size:</label> -->
+              <input
+                type="number"
+                id="min-size"
+                name="min-size"
+                min="0"
+                placeholder="Minimum(SqFt)"
+              />
+            </div>
+
+            <input type="submit" value="Submit" class="submit-btn" />
           </div>
-          <div>
-        
-          <label for="max-price">Max Price:</label>
-          <input type="number" id="max-price" name="max-price" min="0">
-        
-          <label for="min-size">Minimum Size:</label>
-          <input type="number" id="min-size" name="min-size" min="0">
+        </div>
+        <div class="why-we"></div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="main-footer">
+        <div class="logoinfo" data-aos="fade-up">
+          <h2>Sohan Realty</h2>
+          <p>Sohan</p>
+
+          <div class="contact-details">
+            <h1>Contact Us</h1>
+            <li>
+              <div class="fa fa-phone"></div>
+              <a href="tel:+917977496008">+91 7977496008</a>
+            </li>
+            <li>
+              <div class="fa fa-envelope"></div>
+              <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a>
+            </li>
           </div>
-        
-          <input type="submit" value="Submit">
-
+        </div>
+        <div class="com" data-aos="fade-up">
+          <h1>About</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="info" data-aos="fade-up">
+          <h1>Social Media</h1>
+          <div class="sociallogos">
+            <div class="logobox">
+              <a
+                href="#instagram://media?id=434784289393782000_15903882"
+                target="_blank"
+                class="fa fa-instagram"
+              ></a>
+              <a
+                href="https://www.linkedin.com/checkpoint/lg/login"
+                target="_blank"
+                class="fa fa-linkedin"
+              ></a>
+              <a href="#" target="_blank" class="fa fa-facebook"></a>
+              <a
+                href="#https://www.youtube.com/"
+                target="_blank"
+                class="fa fa-youtube-play"
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="why-we"></div>
-    </div>
-
-
-
-  </section>
-  <section id="footer">
-    <div class="main-footer">
-      <div class="logoinfo" data-aos="fade-up">
-        <h2>Sohan Realty</h2>
-        <p>Sohan</p>
-  
-        <div class="contact-details">
-          <h1>Contact Us</h1>
-          <li>
-            <div class="fa fa-phone"></div><a href="tel:+917977496008">+91 7977496008</a></li>
-          <li>
-            <div class="fa fa-envelope"></div><a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a></li>
-          </li>
-      </div>
-    </div>
-    <div class="com " data-aos="fade-up">
-      <h1>About</h1>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <div class="info" data-aos="fade-up">
-      <h1>Social Media</h1>
-      <div class="sociallogos">
-        <div class="logobox">
-          <a href="#instagram://media?id=434784289393782000_15903882" target="_blank" class="fa fa-instagram"></a>
-          <a href="https://www.linkedin.com/checkpoint/lg/login" target="_blank" class="fa fa-linkedin"></a>
-          <a href="#" target="_blank" class="fa fa-facebook"></a>
-          <a href="#https://www.youtube.com/" target="_blank" class="fa fa-youtube-play"></a>
-        </div>
-      </div>
-    </div>
-    </div>
-  <footer>© Your Copyright 2021 All Rights Reserved</footer>
-  </section>
-  <script src="site-list.js"></script>
-  <!-- javascript here=================== -->
-  <script src="index.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
-
+      <footer>© Your Copyright 2021 All Rights Reserved</footer>
+    </section>
+    <script src="site-list.js"></script>
+    <!-- javascript here=================== -->
+    <script src="index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
